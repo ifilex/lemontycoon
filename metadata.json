@@ -1,0 +1,6 @@
+{
+  "name": "Lemon Tycoon 8-Bit",
+  "description": "Retro economic simulation tycoon game featuring an interactive 3D Minecraft voxel environment, multi-business expansion (Lemonade, Coffee, Ice Cream, Smoothies, Pizza), animated voxel customers (Steves, Alexes, Villagers), Game Boy chiptune audio, franchise automation, recipes, progressive tech tree, and dynamic weather.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

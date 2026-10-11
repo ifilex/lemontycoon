@@ -1,0 +1,124 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-pixel: 'Press Start 2P', monospace;
+    --font-vt: 'VT323', monospace;
+    --font-mono: 'Space Mono', monospace;
+  }
+
+  body {
+    background-color: #0f0f0f;
+    color: #9bbc0f;
+    font-family: var(--font-mono), monospace;
+  }
+}
+
+.font-pixel {
+  font-family: var(--font-pixel);
+  letter-spacing: -0.05em;
+}
+
+.font-vt {
+  font-family: var(--font-vt);
+}
+
+.font-retro-mono {
+  font-family: var(--font-mono);
+}
+
+/* Clean Minimalism Retro 8-bit Cards & Buttons */
+.pixel-box {
+  border-color: #8bac0f;
+  background-color: #1a1c1a;
+}
+
+.clean-card {
+  background-color: #1a1c1a;
+  border: 2px solid #8bac0f;
+  color: #9bbc0f;
+}
+
+.clean-card-highlight {
+  background-color: #0f380f;
+  border: 2px solid #8bac0f;
+  color: #9bbc0f;
+}
+
+.clean-btn-primary {
+  background-color: #8bac0f;
+  color: #0f380f;
+  font-weight: 700;
+  border-bottom: 4px solid #306230;
+  transition: transform 0.1s ease, background-color 0.1s ease;
+}
+.clean-btn-primary:hover {
+  background-color: #9bbc0f;
+  transform: translateY(1px);
+}
+.clean-btn-primary:active {
+  transform: translateY(3px);
+  border-bottom-width: 1px;
+}
+
+.clean-btn-dark {
+  background-color: #0f380f;
+  color: #9bbc0f;
+  font-weight: 700;
+  border: 1px solid #8bac0f;
+  border-bottom: 4px solid #000000;
+  transition: transform 0.1s ease, background-color 0.1s ease;
+}
+.clean-btn-dark:hover {
+  background-color: #1a4a1a;
+  transform: translateY(1px);
+}
+.clean-btn-dark:active {
+  transform: translateY(3px);
+  border-bottom-width: 1px;
+}
+
+.pixel-border {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #8bac0f;
+  image-rendering: pixelated;
+}
+
+.pixel-art {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+/* CRT Scanline Effect (optional toggle) */
+.scanlines {
+  background: linear-gradient(
+    rgba(15, 15, 15, 0) 50%, 
+    rgba(0, 0, 0, 0.4) 50%
+  ), linear-gradient(
+    90deg,
+    rgba(155, 188, 15, 0.03),
+    rgba(139, 172, 15, 0.02),
+    rgba(155, 188, 15, 0.03)
+  );
+  background-size: 100% 3px, 6px 100%;
+  pointer-events: none;
+}
+
+/* Custom Scrollbar for Clean Minimalism */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0f0f0f;
+}
+::-webkit-scrollbar-thumb {
+  background: #306230;
+  border: 1px solid #8bac0f;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8bac0f;
+}
+
+
